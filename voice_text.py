@@ -41,7 +41,7 @@ if st.button("🎤 Start Recording"):
         translator = Translator()
         translated_text = translator.translate(recognized_text, src=languages[selected_lang], dest="en").text
 
-        st.write("🌍 **Translated to English:**")
+        st.write("🌍 **Translated to English.:**")
         st.write(f"💬 {translated_text}")
     else:
         st.error(recognized_text)
